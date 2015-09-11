@@ -9,5 +9,12 @@
 
  <body>
    <h1> Welcome to my members page</h1> 
+   <% @members.each do |member| %>
+   	<div>
+   		<h2><%= member.first_name %>
+   		<%= member.last_name %></h2><br />
+   		<hr/>
+   	</div>
+   <% end %>
  </body>
 </html>
