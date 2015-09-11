@@ -10,10 +10,9 @@
  <body>
    <h1> Welcome to my members page</h1> 
    <% @members.each do |member| %>
-   	<div>
-   		<h2><%= member.first_name %>
-   		<%= member.last_name %></h2><br />
-   		<hr/>
+   	<div class = "booyah-box col-xs-3 col-xs-offset-1">
+   		<h2><%= member.first_name %> <%= member.last_name %></h2><br />
+   
    	</div>
    <% end %>
  </body>
